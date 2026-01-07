@@ -1,4 +1,4 @@
 # Click-Speed-Tester
-A simple & minimal cps tester!
+A simple & minimal ligth weight cps tester!
 
 Built with HTML, JS, & SCSS!
