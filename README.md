@@ -1,2 +1,4 @@
 # Click-Speed-Tester
-A simple click speed tester!
+A simple & minimal cps tester!
+
+Built with HTML, JS, & SCSS!
