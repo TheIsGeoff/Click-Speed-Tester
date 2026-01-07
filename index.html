@@ -12,6 +12,14 @@
     <body>
         <div class="main-wrapper">
             <header class="time-controls" id="time-controls">
+                <button class="time-controls_button" id="time-button" data-level="1">
+                    <img src="/static/icons/alarm-clock-regular-full.svg" alt="" class="icon-img">
+                    <p>01s</p>
+                </button>
+                <button class="time-controls_button" id="time-button" data-level="2">
+                    <img src="/static/icons/alarm-clock-regular-full.svg" alt="" class="icon-img">
+                    <p>02s</p>
+                </button>
                 <button class="time-controls_button" id="time-button" data-level="5">
                     <img src="/static/icons/alarm-clock-regular-full.svg" alt="" class="icon-img">
                     <p>05s</p>
@@ -23,6 +31,10 @@
                 <button class="time-controls_button" id="time-button" data-level="10">
                     <img src="/static/icons/alarm-clock-regular-full.svg" alt="" class="icon-img">
                     <p>10s</p>
+                </button>
+                <button class="time-controls_button" id="time-button" data-level="15">
+                    <img src="/static/icons/alarm-clock-regular-full.svg" alt="" class="icon-img">
+                    <p>15s</p>
                 </button>
                 <button class="time-controls_button" data-level="20" id="time-button">
                     <img src="/static/icons/alarm-clock-regular-full.svg" alt="" class="icon-img">
@@ -37,6 +49,9 @@
                     <h1 id="button-text">CLICK TO BEGIN!</h1>
                 </button>
             </main>
+            <div class="reset-container">
+                <button class="reset_button hidden" id="reset_button">Reset</button>
+            </div>
         </div>
         
         <script src="static/main.js" async defer></script>

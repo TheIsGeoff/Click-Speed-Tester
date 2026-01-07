@@ -43,29 +43,38 @@
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
-  outline: none;
+  outline: 2.5px solid #43985300;
   border: 1px solid #3d444d;
   border-radius: 10px;
   background-color: #212830;
   color: white;
   background: radial-gradient(circle, rgba(255, 255, 255, 0.25) 1px, transparent 1px);
   background-size: 20px 20px;
+  -webkit-animation: bg-move 1s linear infinite;
+          animation: bg-move 1s linear infinite;
+  -webkit-transition: background-color 0.15s ease-in-out, outline 0.5s ease-out;
+  transition: background-color 0.15s ease-in-out, outline 0.5s ease-out;
 }
 
 .clicker-input_button:active {
   background-color: #212830;
+  outline: 5px solid #439853;
 }
 
 .clicker-input_button:active > #button-text {
-  background-color: #212830;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 #button-text {
   font-size: 28px;
   font-weight: 800;
   padding: 4px;
-  background-color: #0d1117;
   border-radius: 4px;
+  -webkit-transition: -webkit-transform 0.1s ease-in-out;
+  transition: -webkit-transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
 }
 
 .time-controls {
@@ -83,7 +92,7 @@
 
 .time-controls_button {
   height: 32px;
-  width: 80px;
+  width: 77px;
   margin: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,5 +153,45 @@
 
 .hidden {
   display: none;
+}
+
+.reset-container {
+  height: 52px;
+}
+
+.reset_button {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  height: 32px;
+  width: 80px;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #3d444d;
+  border-radius: 10px;
+  background-color: #212830;
+}
+
+.reset_button:active {
+  background-color: #2f353c;
+}
+
+@-webkit-keyframes bg-move {
+  from {
+    background-position: 20.0px 0.0px;
+  }
+  to {
+    background-position: 0px 20.0px;
+  }
+}
+
+@keyframes bg-move {
+  from {
+    background-position: 20.0px 0.0px;
+  }
+  to {
+    background-position: 0px 20.0px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
