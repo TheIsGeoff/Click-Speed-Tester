@@ -41,7 +41,7 @@ mainButton.addEventListener("click", () => {
 function StartTimer(duration) {
     let remainingTime = duration;
 
-    timerDisplay.innerHTML = `<img src="/static/icons/alarm-clock-regular-full.svg" alt="" class="icon-img"><p>${remainingTime}</p>`;
+    timerDisplay.innerHTML = `<img src="static/icons/alarm-clock-regular-full.svg" alt="" class="icon-img"><p>${remainingTime}</p>`;
 
     const timerInterval = setInterval(() => {
         remainingTime -= 1;
@@ -53,7 +53,7 @@ function StartTimer(duration) {
             endGame();
         }
 
-        timerDisplay.innerHTML = `<img src="/static/icons/alarm-clock-regular-full.svg" alt="" class="icon-img"><p>${remainingTime}</p>`;
+        timerDisplay.innerHTML = `<img src="static/icons/alarm-clock-regular-full.svg" alt="" class="icon-img"><p>${remainingTime}</p>`;
     }, 1000);
 }
 
@@ -70,7 +70,7 @@ resetButton.addEventListener("click", () => {
 });
 
 function endGame() {
-    timerDisplay.innerHTML = `<img src="/static/icons/alarm-clock-regular-full.svg" alt="" class="icon-img"><p>${time} second test:</p>`;
+    timerDisplay.innerHTML = `<img src="static/icons/alarm-clock-regular-full.svg" alt="" class="icon-img"><p>${time} second test:</p>`;
     UpdateButtonText(`Your CPS Is ${ (clicks / parseInt(time)).toFixed(2) }`);
     resetButton.classList.remove("hidden");
 };
