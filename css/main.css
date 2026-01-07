@@ -106,6 +106,10 @@
   display: none;
 }
 
+.time-controls_button:active {
+  background-color: #2f353c;
+}
+
 .time-controls_button--active {
   border: 1px solid #439853;
   background-color: #238636;
