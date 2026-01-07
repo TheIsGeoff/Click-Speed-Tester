@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.main-wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0d1117;
+}
+
+.clicker-input_button {
+  height: 400px;
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #3d444d;
+  border-radius: 10px;
+  background-color: #212830;
+  color: white;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.25) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.clicker-input_button:active {
+  background-color: #212830;
+}
+
+.clicker-input_button:active > #button-text {
+  background-color: #212830;
+}
+
+#button-text {
+  font-size: 28px;
+  font-weight: 800;
+  padding: 4px;
+  background-color: #0d1117;
+  border-radius: 4px;
+}
+
+.time-controls {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.time-controls_button {
+  height: 32px;
+  width: 80px;
+  margin: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #3d444d;
+  border-radius: 10px;
+  background-color: #212830;
+  color: white;
+}
+
+.time-controls_button > .icon-img {
+  display: none;
+}
+
+.time-controls_button--active {
+  border: 1px solid #439853;
+  background-color: #238636;
+}
+
+.time-controls_button--active > .icon-img {
+  display: block;
+}
+
+.icon-img {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+/*# sourceMappingURL=main.css.map */
