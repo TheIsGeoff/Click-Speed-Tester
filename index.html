@@ -11,7 +11,7 @@
     </head>
     <body>
         <div class="main-wrapper">
-            <header class="time-controls">
+            <header class="time-controls" id="time-controls">
                 <button class="time-controls_button" id="time-button" data-level="5">
                     <img src="/static/icons/alarm-clock-regular-full.svg" alt="" class="icon-img">
                     <p>05s</p>
@@ -28,6 +28,9 @@
                     <img src="/static/icons/alarm-clock-regular-full.svg" alt="" class="icon-img">
                     <p>20s</p>
                 </button>
+            </header>
+            <header class="timer hidden" id="timer-display">
+                <p>10.00</p>
             </header>
             <main class="clicker-input" id="time-button">
                 <button class="clicker-input_button" id="clicker-input_button">
